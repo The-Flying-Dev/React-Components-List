@@ -14,6 +14,7 @@ function PokeMoves() {
       <ul>        
         {moves.map(item => ( 
           //<li key={item.id}>{item.move}</li>
+          //All the props in each mapped through item will be {..destructured} then passed to the child component 
           <PokeMoveCard key={item.id} {...item} />        
         ))}
       </ul>
